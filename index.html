@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>form cartao de credito</title>
+  </head>
+  <body>
+    <section class="bg">
+      <div class="container">
+        <div class="form__bg">
+          <div class="flex">
+            <form action="">
+              <div class="input" id="fieldNumberCard">
+                <label for="number-card">Número do cartão</label>
+                <input placeholder="**** **** **** ****" id="inputNumberCard"/>
+                <div class="error" id="error"></div>
+              </div>
+
+              <div class="input" id="fieldName">
+                <label for="name-card">Nome do titular</label>
+                <input placeholder="Nome como está no cartão" id="inputNameCard" />
+                <div class="error" id="error"></div>
+              </div>
+
+              <div class="inputs-wrapper">
+                <div class="input" id="fieldDate">
+                  <label for="validity-card">Validade</label>
+                  <input placeholder="mm/aa" id="inputValidityDate" />
+                  <div class="error" id="error"></div>
+                </div>
+
+                <div class="input" id="fieldCode">
+                  <label for="card-value-code">CVV</label>
+                  <img class="question" src="assets/Question.svg" />
+                  <input placeholder="***" id="inputCvvCode" />
+                  <div class="error" id="error"></div>
+                </div>
+              </div>
+              <!--inputs-wrapper-->
+
+              <div class="add__btn"><input type="submit" id="add-card" value="Adicionar cartão"></div>
+            </form>
+
+            <div class="credit__card-container">
+              <div class="credit__card" id="creditCard">
+                    <div class="logo__card">
+                    <img id="logo" src="" />
+                    <img src="assets/ContactlessPayment.svg" />
+                    </div>
+                    <!--soon-card-->
+
+                    <div class="card__number">
+                    <span id="numberCard">**** **** **** ****</span>
+                    </div>
+                    <!--card__number-->
+
+                    <div class="person__name-and-expiration__date">
+                    <span id="person-name">Seu nome aqui</span>
+                    <span id="validityDate">00/00</span>
+                    </div>
+                    <!--person__name-and-expiration__date-->
+              </div><!--credit__card-->
+
+              <div class="back__of-card" id="backOfcard">
+                <div class="range__black"></div>
+                <div class="range__cvv"><span id="codeCvv">* * *</span></div>
+                <span>CVV</span>
+              </div><!--back__of-card-->
+
+              <div class="shieldCheck">
+                <img src="assets/ShieldCheck.svg" />
+                <span>Seus dados estão seguros</span>
+              </div><!--shieldCheck-->
+            </div><!--credit__card-container-->
+          </div><!--flex-->
+
+          
+        </div><!--form__bg-->
+      </div><!--container-->
+
+
+     
+    </section><!--bg-->
+
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+    
+   
+    
+
+
+  </body>
+</html>
